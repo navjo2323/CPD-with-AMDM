@@ -1,6 +1,6 @@
 # Alternating Mahalanobis Distance Minimization for Accurate and Well-Conditioned CP Decomposition
 
-This repository contains the data and code used in [Alternating Mahalanobis Distance Minimization for Accurate and Well-Conditioned CP Decomposition] (https://arxiv.org/abs/2204.07208). The code used to generate all the figures (except Figure 3) and Algorithm 5.1 is
+This repository contains the data and code used in [Alternating Mahalanobis Distance Minimization for Accurate and Well-Conditioned CP Decomposition](https://arxiv.org/abs/2204.07208). The code used to generate all the figures (except Figure 3) and Algorithm 5.1 is
 [here](https://github.com/cyclops-community/tensor_decomposition/blob/master/mahalanobis.py)
 
 For AMDM and hybrid algorithms the following file should be run in the above mentioned repository
