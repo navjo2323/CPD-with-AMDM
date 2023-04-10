@@ -3,20 +3,21 @@
 This repository contains the data and code used in Alternating Mahalanobis Distance Minimization for Accurate and Well-Conditioned CP Decomposition [link](https://arxiv.org/abs/2204.07208). The code used to generate all the figures and Algorithm 5.1 is
 [here](https://github.com/cyclops-community/tensor_decomposition/blob/master/mahalanobis.py)
 
-For AMDM and hybrid algorithms the following file should be run
+For AMDM and hybrid algorithms the following file should be run in the above mentioned repository
 ```
 python mahalanobis.py
 ```
-with parameters as described below
+with parameters as described below.
 
 ```
-python mahalanobis.py --tlib numpy --order o --tensor ten --col (c1,c2) --R r --R-app ra --num-iter n --fit f --thresh t --reduce-thresh rt --reduce-thresh-freq rtf 
+python mahalanobis.py --tlib numpy --order o --tensor ten --col (c1,c2) --R r --R-app ra --num-iter n 
+--fit f --thresh t --reduce-thresh rt --reduce-thresh-freq rtf 
 --tol to --compute-cond cc 
 ```
 where 
 - `o` is the order of the input tensor
 - `ten` is the input tensor name, it is `random` for Random tensor, `random-col` for collinearity tensor, `amino` for amino acid tensor, `SLEEP` for the SLEEP-EDF tensor, `MGH` for MGH tensor, `scf` for the SCF tensor
-- `col` controls the collinearity of factors which lies between $$(c_1,c_2)$$, for setting a collinearity to be some value c, c1=c2= c should be used
+- `col` controls the collinearity of factors which lies between $(c_1,c_2)$, for setting a collinearity to be some value c, c1=c2= c should be used
 - `r` is the rank of the synthetic tensor (valid for `random` and `random-col` tensors)
 - `ra` is the rank used to approximate the input tensor
 - `n` is the number of total iterations
