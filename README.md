@@ -25,6 +25,7 @@ where
 - `t` is the threshhold for inverting components in the hybrid algorithm as described in Algorithm 5.1 in the paper
 - `rt` is used to vary the threshhold. Should be 1 when we need to reduce the threshold after every certain number of iterations, 0 otherwise
 - `rtf` is used to control the number of iterations after which the threshold should be reduced
+- `to` is used to control the residual norm tolerance
 - `cc` is used if the condition number of CPD is computed in every iteration. The computation follows the efficient implementation as described in Appendix A
 
 
