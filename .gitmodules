@@ -1,0 +1,3 @@
+[submodule "Code/tensor_decomposition"]
+	path = Code/tensor_decomposition
+	url = https://github.com/cyclops-community/tensor_decomposition.git
