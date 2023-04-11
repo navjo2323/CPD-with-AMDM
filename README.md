@@ -3,7 +3,7 @@
 This repository contains the data and code used in [Alternating Mahalanobis Distance Minimization for Accurate and Well-Conditioned CP Decomposition](https://arxiv.org/abs/2204.07208). The code used to generate all the figures (except Figure 3) and Algorithm 5.1 is
 [here](https://github.com/cyclops-community/tensor_decomposition/blob/master/mahalanobis.py)
 
-For AMDM and hybrid algorithms the following file should be run in the above mentioned repository
+For AMDM and hybrid algorithms the following file should be run in the above mentioned linked [repository](https://github.com/cyclops-community/tensor_decomposition/tree/0d562dc7edba569196c7043a703044e3358d00e2)
 ```
 python mahalanobis.py
 ```
@@ -31,4 +31,13 @@ where
 
 The Code folder contains AMDM code for Algorithm 3.1 and ALS code used to generate data for Figure 3 in the paper.
 
-The Data folder contains all the data used to generate all the other figures in the paper. Generating_plots.ipynb is a notebook that has code for producing each figure in the paper.
+For generating all other figures, 
+
+```
+python Mnorm_ALS_multiple.py
+```
+
+should be run with the `num_tensors` parameter as the number of initializations. For AMDM hybrid with fixed threshhold the threshhold should be set. Frequency of reducing the threshhold can again be managed by `--reduce-thresh-freq rtf`
+
+
+The Data folder contains all the data used to generate all the figures in the paper. Generating_plots.ipynb is a notebook that has code for producing each figure in the paper.
